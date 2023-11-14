@@ -5,8 +5,18 @@
 }
 .inputContainer > * {
   flex-basis: 100%;
-  font-size: 28px;
+  font-size: 24px;
   font-style: bold;
   text-align: end;
   padding: 0 1em;
+}
+
+@media only screen and (max-width: 600px) {
+  .inputContainer {
+    width: 300px;
+    height: 50px;
+    & > * {
+      font-size: 12px;
+    }
+  }
 }

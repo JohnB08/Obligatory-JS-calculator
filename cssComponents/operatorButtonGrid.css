@@ -9,3 +9,10 @@
     "addition addition addition"
     "equal equal clear";
 }
+
+@media only screen and (max-width: 600px) {
+  .operatorBtnContainer {
+    width: 100px;
+    height: 200px;
+  }
+}

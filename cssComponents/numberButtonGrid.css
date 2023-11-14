@@ -8,3 +8,10 @@
     "btn1 btn2 btn3"
     "btn0 btn0 btn0";
 }
+
+@media only screen and (max-width: 600px) {
+  .numberBtnContainer {
+    width: 200px;
+    height: 200px;
+  }
+}

@@ -1,15 +1,30 @@
 @import "./cssComponents/numberButtonGrid.css";
 @import "./cssComponents/operatorButtonGrid.css";
 @import "./cssComponents/inputContainer.css";
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Press Start 2P", sans-serif;
 }
 body {
   display: grid;
   place-content: center;
+  padding-top: 10%;
+  background-color: azure;
+}
+h1 {
+  font-size: 24px;
+  text-align: center;
+  padding: 1em;
 }
 .btnContainer {
   display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 12px;
+  }
 }
