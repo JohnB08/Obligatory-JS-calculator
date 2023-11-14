@@ -1,0 +1,10 @@
+.numberBtnContainer {
+  display: grid;
+  height: 400px;
+  width: 400px;
+  grid-template-areas:
+    "btn7 btn8 btn9"
+    "btn4 btn5 btn6"
+    "btn1 btn2 btn3"
+    "btn0 btn0 btn0";
+}

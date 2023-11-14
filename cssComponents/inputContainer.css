@@ -1,0 +1,12 @@
+.inputContainer {
+  display: flex;
+  width: 600px;
+  height: 100px;
+}
+.inputContainer > * {
+  flex-basis: 100%;
+  font-size: 28px;
+  font-style: bold;
+  text-align: end;
+  padding: 0 1em;
+}

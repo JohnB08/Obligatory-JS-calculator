@@ -1,0 +1,11 @@
+.operatorBtnContainer {
+  display: grid;
+  width: 200px;
+  height: 400px;
+  grid-template-areas:
+    "multiply multiply multiply"
+    "divide divide divide"
+    "subtract subtract subtract"
+    "addition addition addition"
+    "equal equal clear";
+}
