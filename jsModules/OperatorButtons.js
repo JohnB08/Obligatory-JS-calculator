@@ -26,6 +26,12 @@ const operatorObject = {
     },
   },
 };
+
+/**
+ *
+ * @param {*} operatorObject //Tar inn et object, lager knapper basert på objektet.
+ * @returns et array med alle HTML knappene.
+ */
 const operatorBtnMaker = (operatorObject) => {
   const operatorBtnArray = [];
   Object.keys(operatorObject).forEach((object) => {

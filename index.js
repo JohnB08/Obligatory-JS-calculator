@@ -1,4 +1,3 @@
-
 //Importer moduler jeg trenger som er lagret i jsModules.
 import { makeElements } from "./jsModules/makeElementsFunction.js";
 import { numberBtnMaker } from "./jsModules/NumberButtons.js";
@@ -33,7 +32,6 @@ const operatorBtnContainer = makeElements("div", {
 btnContainer.appendChild(operatorBtnContainer);
 const operatorBtnArray = operatorBtnMaker(operatorObject);
 operatorBtnArray.forEach((button) => {
-  console.log(button.id);
   button.addEventListener("click", () => {
     calculatorFunctionObject.equal.currentNum1 = mainInput.value;
     calculatorFunctionObject.equal.currentOperator = button.id;
@@ -50,6 +48,7 @@ equalAndClearButtonsArray.forEach((button) => {
       mainInput.value = operatorObject[
         calculatorFunctionObject.equal.currentOperator
       ].operation(
+        //må bruke parseInt her, fordi mainInput.value er en string.
         parseInt(calculatorFunctionObject.equal.currentNum1),
         parseInt(calculatorFunctionObject.equal.currentNum2)
       );

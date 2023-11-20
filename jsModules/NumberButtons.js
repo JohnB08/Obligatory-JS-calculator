@@ -1,4 +1,9 @@
 import { makeElements } from "./makeElementsFunction.js";
+
+/**
+ * Lager en knapp for hvert tall mellom 0-9
+ * @returns et array med alle HTML knappene.
+ */
 const numberBtnMaker = () => {
   let buttonArray = [];
   for (let i = 0; i < 10; i++) {
